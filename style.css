@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+.navbar a.logo img {
+    font-size: 20px;
+    width: 20px;
+}
+
+.navbar a.icon img {
+    font-size: 18px;
+    width: 20px;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
+
+.section-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.promo-bar {
+    background-color: #333;
+    padding: 20px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.promo-bar a {
+    color: #2997ff;
+    text-decoration: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-subtitle {
+    font-size: 4.5em;
+    font-weight: 300;
+    color: #f0e68c;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+.product-image {
+    max-width: 80%;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+}
+
+.paragraph {
+    padding: 30px;
+    color: gray;
+
+}
+
+/* Стили кнопки */
+.buy-button {
+    width: 100px;
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2997ff;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #1a6fd1;
+}
+
+.presentation {
+    background-color: rgb(40, 39, 39);
+}
+
+.presentation .image-container {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.presentation .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 140px;
+}
+
+.presentation .text-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.title h1 {
+    font-size: 3.5rem;
+}
+
+.title a {
+    color: #1a6fd1;
+}
+
+.change-color {
+    text-align: center;
+}
+
+
+.change-color .title h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.change-color .imges img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.color-selector {
+    background-color: #1d1d1d;
+    padding: 15px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.color-selector .text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.color-selector .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.color-selector .circle.color1 {
+    background-color: #A69F97;
+}
+
+.color-selector .circle.color2 {
+    background-color: #000;
+}
+
+.color-selector .circle.color3 {
+    background-color: #D4D3D1;
+}
+
+.color-selector .circle.color4 {
+    background-color: #A7A6A3;
+}
+
+.color-selector .circle.color5 {
+    background-color: #8C7565;
+}
+
+.color-selector .circle.selected {
+    border-color: #fff;
+}
+
+.iphone-section {
+    padding: 50px 20px;
+}
+
+.main-image {
+    /* max-width: 800px; */
+    margin: 0 auto;
+}
+
+.main-image h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-image .highlight {
+    color: #ffb56b;
+}
+
+.main-image img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-image p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+.information p {
+    /* font-size: 1.1em; */
+    /* font-family: "SF Pro Display"; */
+    line-height: 1.6;
+    width: 400px;
+    margin: 100px auto;
+    font-size: 21px;
+    line-height: 1.381002381;
+    font-weight: 600;
+    letter-spacing: .011em;
+    font-family: 'SF Pro Display', SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
+
+.ai-section {
+    padding: 50px 20px;
+}
+
+.ai-section h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #0071e3;
+}
+
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-content .iphone-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+.main-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.tool-tabs {
+    margin: 30px 0;
+    font-size: 1.2em;
+}
+
+.tool-tabs span {
+    color: #bbb;
+}
+
+.tool-tabs p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.feature-cards {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cards {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.cards p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.privacy-section {
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.privacy-section h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.privacy-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.privacy-section a {
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
